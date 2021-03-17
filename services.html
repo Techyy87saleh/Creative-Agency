@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body>
+
+    <style>
+      *{
+         padding:0;
+         margin:0;
+         box-sizing: border-box;
+		 font-family: 'Source Sans Pro', sans-serif;
+ 
+     }
+
+     body {
+	padding: 0;
+	margin: 0;
+}
+ nav {
+    position:fixed;
+ 	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: #3e65da;
+ }
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #222f3e;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+    height: 5px;
+	background-color: #ee5253;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+.main h1{
+    margin-top:10rem;
+    padding:2.1rem;
+ }
+ .main p{
+     padding:1.6rem;
+     line-height:1.4rem;
+ }
+
+ .icons {
+
+      text-align:center;
+      padding:1.5rem;
+ 
+ }
+ .icons p{
+     line-height:1.5rem;
+  }
+
+  
+ .icons1 {
+
+text-align:center;
+padding:1.5rem;
+
+}
+.icons1 p{
+line-height:1.5rem;
+}
+
+.icons2 {
+
+text-align:center;
+padding:1.5rem;
+ 
+}
+.icons2 p{
+line-height:1.5rem;
+}
+
+.icons3 {
+
+text-align:center;
+padding:1.5rem;
+
+}
+.icons3 p{
+line-height:1.5rem;
+}
+
+.icons4 {
+
+text-align:center;
+padding:1.5rem;
+
+}
+.icons4 p{
+line-height:1.5rem;
+}
+
+.icons5 {
+
+text-align:center;
+padding:1.5rem;
+
+}
+.icons5 p{
+line-height:1.5rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color:black;
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+        line-height:1px;
+	}
+	nav .links a {
+		font-size: 1.5rem;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+@media(min-width:769px){
+    nav .links a{
+		font-size:1.5rem;
+		margin-top:2.9rem;
+    	}
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+         
+      }
+      .main{
+          margin-top:-5rem;
+      }
+}
+ 
+ </style>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">Creative<strong>Agency</strong></div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+             <li><a href="contact.html">Contact</a></li>
+              
+
+
+
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+      <div class = "main">
+         <h1>Services that we can help you with</h1>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, cum. Iusto fugiat voluptatum necessitatibus exercitationem odio natus deserunt, excepturi omnis, in praesentium quos tenetur nemo odit dolores fuga, voluptatibus delectus.</p>
+       </div>
+
+      <div class = "container">
+
+    <div class = "icons">
+        <img src = "tech1.png" alt="tech1">
+        <h1>Development</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic quo! Earum consequatur reiciendis totam!</p>
+    </div>
+    <div class = "icons1">
+        <img src = "tech2.png" alt="">
+        <h1>Design</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga quas fugit ut veniam distinctio ex enim illo nihil quis?</p>
+    </div>
+
+    <div class = "icons2">
+        <img src = "tech3.png" alt="">
+        <h1>SEO</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nam, non ex at quisquam quas delectus dignissimos accusantium dolores incidunt.</p>
+    </div>
+    <div class = "icons3">
+        <img src = "tech4.png" alt="">
+        <h1>Marketing</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis exercitationem expedita deleniti praesentium explicabo repellendus recusandae nostrum voluptatibus repellat.</p>
+    </div>
+    <div class = "icons4">
+        <img src = "tech5.png" alt="">
+        <h1>App Development</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam accusantium quam libero minus voluptatibus repellendus consequatur eius recusandae harum!</p>
+    </div>
+    <div class = "icons5">
+        <img src = "tech6.png" alt="">
+        <h1>Error Fixing</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure obcaecati quibusdam deserunt saepe quia maxime assumenda, amet deleniti modi eius!</p>
+    </div>
+      </div>
+     
+</body>
+</html>
